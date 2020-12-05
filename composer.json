@@ -1,0 +1,44 @@
+{
+    "name": "tinybeans/post-to-your-slack",
+    "description": "特定のセクションを保存したら Slack に通知を飛ばします。",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "post to your slack"
+    ],
+    "support": {
+        "docs": "https://github.com/tinybeans/post-to-your-slack/blob/master/README.md",
+        "issues": "https://github.com/tinybeans/post-to-your-slack/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roy Okuwaki",
+            "homepage": "https://tinybeans.net"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "tinybeans\\posttoyourslack\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Post to your Slack",
+        "handle": "post-to-your-slack",
+        "developer": "Roy Okuwaki",
+        "developerUrl": "https://tinybeans.net",
+        "documentationUrl": "https://github.com/tinybeans/post-to-your-slack/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/tinybeans/post-to-your-slack/master/CHANGELOG.md",
+        "components": {
+            "postToYourSlackService": "tinybeans\\posttoyourslack\\services\\PostToYourSlackService"
+        },
+        "class": "tinybeans\\posttoyourslack\\PostToYourSlack"
+    }
+}
